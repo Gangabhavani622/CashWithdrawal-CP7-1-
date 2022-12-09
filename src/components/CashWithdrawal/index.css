@@ -1,0 +1,101 @@
+/* Write your CSS here */
+
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-size: cover;
+}
+
+.contact-container {
+  background-color: #150b3e;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 70%;
+  border: 0px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto';
+}
+
+.name-container {
+  display: flex;
+  flex-direction: row;
+  padding: 3px;
+  margin: 2px;
+}
+.first-letter {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  border: 0px;
+  color: #7c3aed;
+  background-color: #c7d2fe;
+  font-weight: bold;
+  padding: 5px;
+  margin: 8px;
+  text-align: auto center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 18px;
+  margin-right: 20px;
+}
+.name {
+  font-size: 28px;
+  font-weight: 500;
+  color: #d4d2db;
+  margin-left: 4px;
+  padding: 3px;
+  margin: 2px;
+  padding-top: 15px;
+}
+
+.balance-container {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  font-family: 'Roboto';
+}
+
+.balance-label {
+  color: #585076;
+  padding: 3px;
+  font-size: 26px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.count-container {
+  display: flex;
+  flex-direction: row;
+  padding: 3px;
+}
+.count {
+  color: #d4d2db;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.para {
+  color: #585076;
+  padding: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: right;
+  padding-top: 0px;
+}
+.denominationList {
+  display: flex;
+  flex-direction: row;
+  column-count: 2;
+  padding: 3px;
+  margin: 4px;
+  list-style: none;
+  max-width: 300px;
+  flex-wrap: wrap;
+}
