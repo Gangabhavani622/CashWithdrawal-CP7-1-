@@ -7,7 +7,13 @@ class CashWithdrawal extends Component {
   state = {count: 2000}
 
   onChangeCount = value => {
+    const {count}=this.state
+    if ((count -value) >= 1150){
     this.setState(prevState => ({count: prevState.count - value}))
+  }
+    else{
+      this.setState({count:2000})
+    }
   }
 
   render() {
@@ -30,7 +36,7 @@ class CashWithdrawal extends Component {
           <p className="para">In Rupees</p>
           <p className="count">Withdraw</p>
           <p className="balance-label">CHOOSE SUM (IN RUPEES)</p>
-          <un className="denominationList">
+          <ul className="denominationList">
             {denominationsList.map(eachItem => (
               <DenominationItem
                 key={eachItem.id}
@@ -38,7 +44,7 @@ class CashWithdrawal extends Component {
                 onChangeCount={this.onChangeCount}
               />
             ))}
-          </un>
+          </ul>
         </div>
       </div>
     )
