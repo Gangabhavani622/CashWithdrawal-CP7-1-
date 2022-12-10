@@ -7,13 +7,9 @@ class CashWithdrawal extends Component {
   state = {count: 2000}
 
   onChangeCount = value => {
-    const {count}=this.state
-    if ((count -value) >= 1150){
+
     this.setState(prevState => ({count: prevState.count - value}))
-  }
-    else{
-      this.setState({count:2000})
-    }
+ 
   }
 
   render() {
