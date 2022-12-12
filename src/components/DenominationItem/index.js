@@ -9,7 +9,7 @@ const DenominationItem = props => {
   }
   return (
     <li className="list-styling">
-      <button className="button" type="button" onClick={onSubtractCount()}>
+      <button className="button" type="button" onClick={onSubtractCount}>
         {value}
       </button>
     </li>
